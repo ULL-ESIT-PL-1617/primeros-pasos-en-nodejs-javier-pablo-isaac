@@ -5,7 +5,7 @@ var exec = require('child_process').exec;
 gulp.task('build', function() {
 	var child = exec('node ./scripts/generate-gitbook.js', function(error, stdout, stederr) {
 	
-		console.log('publicado en gh-pages');
+		console.log('libro construido');
 		
 		});
 
@@ -16,7 +16,7 @@ gulp.task('serve', function() {
         var exec = require('child_process').exec;
         var child = exec('node ./scripts/server.js', function(error, stdout, stederr) {
 
-                console.log('publicado en gh-pages');
+                console.log('servidor operativo');
 
                 });
 
