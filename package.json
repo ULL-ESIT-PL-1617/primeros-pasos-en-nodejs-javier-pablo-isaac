@@ -31,6 +31,7 @@
   "homepage": "https://github.com/enten/gitbook-boilerplate#readme",
   "devDependencies": {
     "async": "^1.4.0",
+    "express": "^4.14.1",
     "fs-extra": "^0.22.1",
     "gh-pages": "^0.3.1",
     "gitbook": "^2.1.0",
