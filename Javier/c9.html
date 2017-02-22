@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Hub · GitBook</title>
+        <title>Cloud9 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Isaac/git.html" />
+    <link rel="next" href="markdown.html" />
     
     
-    <link rel="prev" href="atom.html" />
+    <link rel="prev" href="../Isaac/pandoc.html" />
     
 
     </head>
@@ -173,7 +173,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="hub.html">
+        <li class="chapter " data-level="1.5" data-path="hub.html">
             
                 <a href="hub.html">
             
@@ -225,7 +225,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="c9.html">
+        <li class="chapter active" data-level="1.9" data-path="c9.html">
             
                 <a href="c9.html">
             
@@ -281,7 +281,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Hub</a>
+        <a href=".." >Cloud9</a>
     </h1>
 </div>
 
@@ -296,27 +296,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="hub">Hub</h1>
-<h2 id="&#xBF;qu&#xE9;-es-hub">&#xBF;Qu&#xE9; es hub?</h2>
-<p>Es una herramienta de l&#xED;nea de comandos que empaqueta a <code>git</code> con el objetivo de extenderlo con caracter&#xED;sticas y comandos adicionales que permiten que sea m&#xE1;s f&#xE1;cil trabajar con <strong>GitHub</strong>.</p>
-<h2 id="&#xBF;c&#xF3;mo-se-instala-hub">&#xBF;C&#xF3;mo se instala hub?</h2>
-<p>Para instalar hub en Linux, es necesario la dependencia <code>git 1.7.3</code> o superior y hay que proceder a realizar los siguientes pasos:</p>
-<h3 id="1-clonar-el-repositorio-donde-se-aloja-hub">1. Clonar el repositorio donde se aloja hub</h3>
-<p>Primero hay que descargarse el repositorio que contiene toda la informaci&#xF3;n necesaria para instalar hub en nuestro equipo. Para ello se ejecuta el siguiente comando en una terminal:
-<code>git clone https://github.com/github/hub.git</code></p>
-<p><img src="img/repositorio" alt="imagen del repositorio"></p>
-<h3 id="2-acceder-a-la-carpeta-clonada">2. Acceder a la carpeta clonada</h3>
-<p>Una vez que hemos clonado el repositorio de hub alojado en GitHub, ejecutamos el comando <code>cd hub</code> para introducirnos dentro de la carpeta que contiene toda la informaci&#xF3;n sobre hub</p>
-<p><img src="img/cd" alt="imagen del repositorio"></p>
-<h3 id="3-compilaci&#xF3;n-del-paquete">3. Compilaci&#xF3;n del paquete</h3>
-<p>Para poder llevar a cabo este &#xFA;ltimo paso, es necesario que se encuentren instalados las siguientes dependencias:</p>
-<ul>
-<li><code>make</code></li>
-<li><a href="https://golang.org/doc/install" target="_blank">Go 1.6+</a></li>
-<li><a href="https://www.ruby-lang.org/es/documentation/installation" target="_blank">Ruby 1.9+</a> con <a href="http://bundler.io" target="_blank">Bundler</a> - Para crear las p&#xE1;ginas de manual</li>
-</ul>
-<p>El comando a ejecutar en la terminal de Linux es <code>make install prefix=/usr/local</code>. La ruta que se especifica en el argumento <strong>prefix</strong> determina el directorio donde se va a alojar el paquete cuando sea instalado y donde se van a buscar los archivos asociados a este paquete cuando se ejecute.</p>
-<p><img src="img/install.png" alt="imagen del repositorio"></p>
+                                <h1 id="cloud9">Cloud9</h1>
+<h2 id="&#xBF;qu&#xE9;-es-cloud9">&#xBF;Qu&#xE9; es Cloud9?</h2>
+<p>Es un Integrated Development Environment (<strong>IDE</strong>) para desarrollo que tiene como plataforma la nube.</p>
+<h2 id="&#xBF;c&#xF3;mo-se-utiliza-cloud9">&#xBF;C&#xF3;mo se utiliza Cloud9?</h2>
+<p>Lo primero que debemos hacer para utilizar Cloud9 es crearnos una cuenta. Para ello vamos a su <a href="https://c9.io/" target="_blank">p&#xE1;gina oficial </a>.
+<img src="img/c9.png" alt="imagen p&#xE1;gina de Cloud9"></p>
+<p>Una vez que hemos creado la cuenta veremos una ventana como la siguiente:</p>
+<p><img src="img/c9_2.png" alt="imagen"></p>
+<p>A continuaci&#xF3;n, para poder empezar a trabajar, es necesario crear un espacio de trabajo. Para ello vamos a la pesta&#xF1;a <strong>Create a new workspace</strong>.</p>
+<p>Las opciones b&#xE1;sicas de configuraci&#xF3;n del <em>workspace</em> nos permiten establecerlo como
+<strong>privado o p&#xFA;blico</strong> y elegir una <strong>plantilla</strong>.</p>
+<p><img src="img/workspace.png" alt="imagen"></p>
+<h2 id="workspace">Workspace</h2>
+<p>El <strong>workspace</strong> se corresponde con nuestra &#xE1;rea de trabajo. En ella, tal y como se puede apreciar en la siguiente imagen, podemos crear documentos, carpetas, abrir ficheros e incluso una terminal.</p>
+<p><img src="img/c9_3.png" alt="imagen"></p>
+<p>El sistema operativo que usa Cloud9 es  <code>Ubuntu 14.04.5 LTS</code>, tal y como podemos apreciar al ejecutar el comando <code>lsb_release -d</code>. Es por ello que
+desde la terminal podemos ejecutar todos los comandos propios de esta distribuci&#xF3;n de Linux, as&#xED; como instalar
+programas a trav&#xE9;s de su gestor de paquetes.</p>
 
                                 
                                 </section>
@@ -344,12 +341,12 @@
 
             
                 
-                <a href="atom.html" class="navigation navigation-prev " aria-label="Previous page: Atom">
+                <a href="../Isaac/pandoc.html" class="navigation navigation-prev " aria-label="Previous page: Pandoc">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Isaac/git.html" class="navigation navigation-next " aria-label="Next page: Git">
+                <a href="markdown.html" class="navigation navigation-next " aria-label="Next page: Markdown">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -360,7 +357,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Hub","level":"1.5","depth":1,"next":{"title":"Git","level":"1.6","depth":1,"path":"Isaac/git.md","ref":"Isaac/git.md","articles":[]},"previous":{"title":"Atom","level":"1.4","depth":1,"path":"Javier/atom.md","ref":"Javier/atom.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Javier/hub.md","mtime":"2017-02-22T19:17:10.854Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-22T22:12:16.579Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cloud9","level":"1.9","depth":1,"next":{"title":"Markdown","level":"1.10","depth":1,"path":"Javier/markdown.md","ref":"Javier/markdown.md","articles":[]},"previous":{"title":"Pandoc","level":"1.8","depth":1,"path":"Isaac/pandoc.md","ref":"Isaac/pandoc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Javier/c9.md","mtime":"2017-02-22T22:07:47.154Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-22T22:12:16.579Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
